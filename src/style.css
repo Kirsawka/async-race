@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    margin: 20px 0;
+}
+
+.cars {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.car-change-buttons {
+    display: inline-flex;
+    margin: 10px 10px 0 0;
+    column-gap: 5px;
+}
+
+.car {
+    position: relative;
+}
+
+.car-icon {
+    height: 60px;
+    width: 80px;
+}
+
+.flag-wrapper {
+    position: absolute;
+    right: 100px;
+    bottom: 20px;
+}
+
+.finish-icon {
+    width: 70px;
+    height: 70px;
+    fill: #cb2929;
+}
+
+.car-container {
+    display: flex;
+    align-items: center;
+}
+
+.car-control-buttons {
+    display: flex;
+    margin: 0 15px 15px 0;
+    column-gap: 5px;
+}
+
+.car-container::after {
+    content: '';
+    background-color: black;
+    height: 3px;
+    display: block;
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    margin-top: 30px;
+}
+
+.first-row.row {
+    background-color: #6363ee;
+    font-size: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+.message {
+    font-size: 40px;
+    font-weight: 600;
+    font-style: italic;
+    color: #1f1fad;
+    padding: 30px;
+    background-color: #d9d9d9;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.arrow {
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.sort {
+    cursor: pointer;
+}
+
+.sort:hover {
+    color: #b3b4e0;
+}
